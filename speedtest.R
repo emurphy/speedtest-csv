@@ -14,7 +14,7 @@ speed_desktop <- transform(speed_desktop, datetime=strptime(datetime_str, "%b %d
 speed <- rbind(speed_laptop, speed_desktop)
 
 library(ggplot2)
-png("speedtest.png")
+png("speedtest.png", width=1000, height=700)
 g <- ggplot(speed, aes(x=datetime, y=mbits_per_second, group=system, color=system))
 g + geom_line()
 dev.off()
