@@ -21,5 +21,11 @@ dev.off()
 
 png("speedtest-side-by-side.png", width=1000, height=700)
 grid <- ggplot(speed, aes(x=datetime, y=mbits_per_second))
-g + facet_grid(. ~ system) + geom_line()
+grid + facet_grid(. ~ system) + geom_line()
 dev.off()
+
+png("speedtest-boxplot.png", width=1000, height=700)
+box <- ggplot(speed, aes(factor(system), mbits_per_second))
+box + geom_boxplot()
+dev.off()
+
