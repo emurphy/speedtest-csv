@@ -1,7 +1,7 @@
 # speedtest-csv
 Run a speedtest CLI in the background and record average download speed to a CSV. Use R to plot the values.
 
-This was used for a one-off troubleshooting of a home internet connection. It seemed like AT&T U-Verse was providing lower than the promised 18Mbps. The measurements of a desktop connected by cable directly to the router helped disprove that. The laptop on wifi was slower. The further the laptop was from the wifi, the slower, with the office area being the slowest.
+This was used for a one-off troubleshooting of a home internet connection. It seemed like AT&T U-Verse was providing lower than the promised 18Mbps. The measurements of a desktop connected by cable directly to the router countered that. The laptop on wifi was slower. The further the laptop was from the wifi, the slower, with the office area being the slowest.
 
 The included CSV files, R script and plots are therefore set up to compare two systems.
 
