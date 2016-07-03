@@ -28,3 +28,9 @@ It outputs 3 png files:
   3. speedtest-boxplot.png ![speedtest-boxplot.png](speedtest-boxplot.png)  
 
 Of course a spreadsheet could also be used.
+
+Approximate times when the laptop was near the wifi router (tracked manually and not merged into the data or denoted in graphs):  
+  
+  1. July 1, 7:23 - 9:17 and 14:30 - 17:04  
+  2. July 2, 7:25 - 19:57  
+  3. July 2 20:52 - July 3 9:23  
