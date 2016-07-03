@@ -19,3 +19,7 @@ g <- ggplot(speed, aes(x=datetime, y=mbits_per_second, group=system, color=syste
 g + geom_line()
 dev.off()
 
+png("speedtest-side-by-side.png", width=1000, height=700)
+grid <- ggplot(speed, aes(x=datetime, y=mbits_per_second))
+g + facet_grid(. ~ system) + geom_line()
+dev.off()
