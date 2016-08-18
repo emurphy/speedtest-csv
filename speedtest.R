@@ -1,14 +1,14 @@
-laptop_csv <- 'speedtest-laptop-wifi.csv'
-desktop_csv <- 'speedtest-desktop-cable.csv'
+laptop_csv <- 'speedtest-att.csv'
+desktop_csv <- 'speedtest-netgear.csv'
 laptop_df <- read.csv(laptop_csv, header=FALSE)
 desktop_df <- read.csv(desktop_csv, header=FALSE)
 names(laptop_df) = c("datetime_str", "bytes_per_second")
 names(desktop_df) = c("datetime_str", "bytes_per_second")
 
 library(dplyr)
-speed_laptop <- mutate(laptop_df, mbits_per_second = bytes_per_second * 8 / 1000000, system="laptop wifi")
+speed_laptop <- mutate(laptop_df, mbits_per_second = bytes_per_second * 8 / 1000000, system="AT&T wifi")
 speed_laptop <- transform(speed_laptop, datetime=strptime(datetime_str, "%b %d %H:%M:%S "))
-speed_desktop <- mutate(desktop_df, mbits_per_second = bytes_per_second * 8 / 1000000, system="desktop cable")
+speed_desktop <- mutate(desktop_df, mbits_per_second = bytes_per_second * 8 / 1000000, system="NetGear wifi")
 speed_desktop <- transform(speed_desktop, datetime=strptime(datetime_str, "%b %d %H:%M:%S "))
 
 speed <- rbind(speed_laptop, speed_desktop)
