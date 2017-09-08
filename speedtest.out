@@ -1,0 +1,4 @@
+./speedtest.sh: line 9: 44721 Terminated: 15          sleep 600
+./speedtest.sh: line 9: 44760 Terminated: 15          sleep 600
+ne 9: 44729 Terminated: 15          sleep 600
+./speedtest.sh: line 9: 44763 Terminated: 15          sleep 600
