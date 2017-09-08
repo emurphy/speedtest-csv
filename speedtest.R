@@ -1,4 +1,4 @@
-csv <- 'speedtest-cable-to-2017-09-05.csv'
+csv <- 'speedtest-cable-to-2017-09-07.csv'
 df <- read.csv(csv, header=FALSE)
 names(df) = c("datetime_str", "bytes_per_second")
 
